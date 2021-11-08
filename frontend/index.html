@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animes Blue</title>
+   
+    <link rel="stylesheet" href="../frontend/public/css/style.css">
+    <link rel="stylesheet" href="../frontend/public/css/style_cadastro.css">
+    <link rel="stylesheet" href="../frontend/public/css/style_lista.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li>
+                <a href="/">Animes</a>
+            </li>            
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <h1>Lista de Animes</h1>
+        <section class= "container">
+            <form onsubmit="submitForm(event)">
+              
+              <section id="campos">
+                <div>
+                  <label for="nome"></label>
+                  <input type="text" class="nome" id="nome" placeholder="Digite o nome do Anime">                
+                </div>
+
+                </div>
+                <label for="imagem"></label>
+                <input type="text" class="imagem" id="imagem" placeholder="Digite a url da Imagem">                
+                </div>
+
+                <div>
+                  <label for="genero"></label>
+                  <input type="text" class="genero" id="genero" placeholder="Digite o gênero do Anime">                
+                </div>  
+                </div>  
+              </section>
+
+              <section id="campos_escolhas">
+
+                <select id="nota">                
+                  <option value="">Selecione uma Nota</option>                           
+                  <option value="1">(1) Terrível</option>
+                  <option value="2">(2) Horrível</option>
+                  <option value="3">(3) Muito Ruim</option>
+                  <option value="4">(4) Ruim</option>
+                  <option value="5">(5) Média</option>
+                  <option value="6">(6) Regular</option>
+                  <option value="7">(7) Bom</option>
+                  <option value="8">(8) Muito Bom</option>
+                  <option value="9">(9) Ótimo</option>
+                  <option value="10">(10) Obra-Prima</option>
+                </select>  
+              
+                <select id="status_anime">
+                  <option value="">Selecione o Status</option>
+                  <option value="Assistindo">Assistindo</option>
+                  <option value="Concluído">Concluído</option>
+                  <option value="Em-Espera">Em Espera</option>
+                  <option value="Pretendo-Assistir">Pretendo Assistir</option>
+                </select>
+
+              </section>
+              
+              <section>
+              <div id="botoes_cadastro">
+                <button class="glow-on-hover" id= "btn_success" type="submit">Enviar</button>
+                <button class="glow-on-hover" id= "btn_cancelar" type="button">Cancelar</button>
+              </div>
+              </section>    
+            </form>
+        </section>
+        
+        <section>
+            <div id="lista"></div>
+        </section>
+      
+    </main> 
+
+    <footer>
+      <h4>© 2021 Desenvolvedor Full Stack - Leandro Kosta ©</h4> 
+    </footer>
+
+    <script src="../frontend/public/js/scripts.js"></script>
+    
+  </body>
+</html>
